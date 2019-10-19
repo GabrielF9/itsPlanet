@@ -2,13 +2,13 @@ import React from 'react';
 import {
   StyleSheet,
   View,
-  Text
+  Text,
 } from 'react-native';
 
-export default function Home({ navigation }) {
-  return(
+export default function Game({ navigation }) {
+  return (
     <View style={styles.container}>
-        <Text>O jogo começou</Text>
+      <Text>Game Page</Text>
     </View>
   );
 }
@@ -17,6 +17,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
-  }
+    alignItems: 'center',
+  },
 });
