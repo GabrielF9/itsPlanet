@@ -8,8 +8,8 @@ const Routes = createAppContainer(
   createSwitchNavigator({
     Home,
     Star,
-    Game
-  })
+    Game,
+  }),
 );
 
 export default Routes;
