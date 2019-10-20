@@ -37,12 +37,12 @@ class PlanetAnimation extends Component {
 
   render(){
     const spinX = this.spinValue.interpolate({
-      inputRange: [0, 2],
-      outputRange: [-720, 1800]
+      inputRange: [0, 1, 2],
+      outputRange: [-1000, 1200, -500]
     });
     const spinY = this.spinValue.interpolate({
-      inputRange: [0, 1],
-      outputRange: [0, 120]
+      inputRange: [0, 1, 2],
+      outputRange: [0, 120, -120]
     });
 
     return(
@@ -72,7 +72,9 @@ export default function Final({navigation}) {
 
       <Image source={background} style={styles.background}/>
 
-      <PlanetAnimation />
+      <View style={{scale: 0.5}}>
+        <PlanetAnimation />
+      </View>
     </View>
   );
 }

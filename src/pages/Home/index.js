@@ -13,6 +13,7 @@ import styles from './styles';
 import background from '../../assets/images/background.png';
 import jogar from '../../assets/images/jogar.png';
 import sair from '../../assets/images/sair.png';
+import logo from '../../assets/images/solar.png';
 
 function backButtonHandler() {
   return <View></View>
@@ -33,7 +34,8 @@ export default function Home({navigation}) {
 
       <Image source={background} style={styles.background}/>
 
-      <Text style={styles.title}>Bem Vindo!</Text>
+      <Image source={logo} style={{width: '60%', resizeMode: 'center', position: 'absolute', bottom: '20%'}} />
+
       <View style={styles.buttonsContainer}>
         <TouchableOpacity style={styles.button} onPress={()=>{navigation.navigate('Game')}}>
           <Image source={jogar} style={styles.buttonImage}/>
