@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-
+import { fonts } from '../../theme';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -12,18 +12,25 @@ const styles = StyleSheet.create({
     height: '100%',
     resizeMode: 'cover'
   },
+  title:{
+    fontSize:30,
+    color: '#FFF',
+    fontFamily:fonts.regular,
+    marginBottom: "5%",
+  },
   buttonsContainer: {
     position: 'absolute',
     bottom: '2%',
     width: '50%',
     height: '40%',
-    justifyContent: 'space-around',
+    marginBottom: '5%',
+    justifyContent: 'center',
     alignItems: 'center'
   },
   button: {
     width: '60%',
     height: '60%',
-    marginBottom: '10%'
+    marginBottom: '-15%',
   },
   buttonImage: {
     width: '100%',
