@@ -1,14 +1,16 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
 import Home from './pages/Home';
-import Config from './pages/Config';
 import Game from './pages/Game';
+import Planet from './pages/Planet';
+import Final from './pages/Final';
 
 const Routes = createAppContainer(
   createSwitchNavigator({
     Home,
-    Config,
     Game,
+    Planet,
+    Final,
   }),
 );
 

@@ -74,14 +74,21 @@ const styles = StyleSheet.create({
     //position: 'absolute',
     resizeMode: 'center',
   },
-  star: {
+  planet: {
     position: 'absolute',
-    top: '40%',
+    top: '39.5%',
     left: '43%',
     width: 100,
     height: 100
   },
-  continue: {
+  mplanet: {
+    position: 'absolute',
+    top: '25.5%',
+    left: '16.7%',
+    width: 30,
+    height: 30
+  },
+  sist: {
     position: 'absolute',
     bottom: '7%',
     right: '5%',

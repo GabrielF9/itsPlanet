@@ -6,18 +6,18 @@ import {
   Text,
   StatusBar,
   BackHandler,
-  Alert
 } from 'react-native';
 
 import styles from './styles';
 
 import background from '../../assets/images/background.png';
 import jogar from '../../assets/images/jogar.png';
-import config from '../../assets/images/config.png';
 import sair from '../../assets/images/sair.png';
+
 function backButtonHandler() {
   return <View></View>
 }
+
 export default function Home({navigation}) {
   useEffect(() => {
     BackHandler.addEventListener("hardwareBackPress", backButtonHandler);
@@ -26,6 +26,7 @@ export default function Home({navigation}) {
       BackHandler.removeEventListener("hardwareBackPress", backButtonHandler);
     };
   }, []);
+  
   return (
     <View style={styles.container}>
       <StatusBar hidden={true} />
@@ -36,10 +37,6 @@ export default function Home({navigation}) {
       <View style={styles.buttonsContainer}>
         <TouchableOpacity style={styles.button} onPress={()=>{navigation.navigate('Game')}}>
           <Image source={jogar} style={styles.buttonImage}/>
-        </TouchableOpacity>
-      
-        <TouchableOpacity style={styles.button} onPress={()=>{navigation.navigate('Config')}} >
-          <Image source={config} style={styles.buttonImage}/>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={()=>{BackHandler.exitApp()}}>
